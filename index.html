@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Space Invaders</title>
+		<link rel="icon" href="ICON.ico">
+		<link rel="stylesheet" type="text/css" href="myStyle.css">
+		<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div id="WebGLCanvas"></div>
+		<div id="TITLE">
+			<h1>Space Invaders</h1>
+		</div>
+		<div id="SCORE">
+			<span>SCORE:<span id="PlayerScore">0</span></span>
+			<span><br>HIGHSCORE:<span id="PlayerScore">0</span></span>
+		</div>
+		<div id="HEALTH">
+			<span>HEALTH:<span id="Health">10</span></span>
+		</div>
+		<div id="LEVEL">
+			<span>LEVEL:<span id="currentLevel">1</span></span>
+		</div>
+		<div id="HELP">
+			<p>HOW TO PLAY</p>
+			<p>&bull;Use the arrow
+			<br>keys to move your
+			<br>spaceship around</p>
+			<p>&bull;Press the spacebar
+			<br>to shoot a laser</p>
+			<p>&bull;Press P to pause 
+				<br> the game</p>
+			<p>&bull;Press Shift-N if
+			<br>you would like to
+			<br>start a new game</p>
+			<p>&bull;Press H to hide
+			<br>the instructions</p>
+		</div>
+		<script type="text/javascript" src="three.js"></script>
+		<script type="text/javascript" src="OrbitControls.js"></script>
+		<script type="text/javascript" src="createMainSpaceShip.js"></script>
+		<script type="text/javascript" src="createEnemySpaceShip.js"></script>
+		<script type="text/javascript" src="eventListeners.js"></script>
+		<script type="text/javascript" src="SpaceInvaders.js"></script>
+	</body>
+</html>
